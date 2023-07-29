@@ -1,0 +1,28 @@
+The following are the features which are implemented-
+
+1)Add Todo: Users can add new tasks to the todo list.
+2)Edit Todo: Users can edit the details of existing tasks.
+3)Delete Todo: Users can remove tasks from the todo list. 
+4)Mark as Done: Users can mark tasks as completed. Here when a task is completed, it is striked off.
+5)Mark as Undone: Mark as Undone: Users can mark completed tasks as undone.The striked off item now becomes normal text without a strike-off.
+6)Add Category: Users can categorize tasks to organize them better.
+7)Store Todo in Local Storage: The todo list will be stored in the browser's local storage to persist the data. 
+8)Add Due-date to Todo: Users can set due-dates for tasks to track deadlines. 
+9)Priority: Tasks can be assigned a priority level (low, medium, high). 
+10)Filters:
+    Due Date: Users can filter tasks based on a specific due date range.
+    Category: Users can filter tasks based on categories.
+    Priority: Users can filter tasks based on priority levels.
+11)Subtasks: Users can create subtasks under main tasks for better task management. For each SubTask, kept only the delete function, otherwise it becomes congested with lots of buttons
+12)View Backlogs: Users can view tasks that are pending or missed. A task which has missed the due date and has not been marked as done, goes into the Backlogs section. However, if it is marked done, it again comes back to original list of items.
+13)Search:
+    Exact Todo: Users can search for a specific task using its exact name.
+    Similar Words: Users can search for tasks with names similar to a given search term.
+    Partial Search: Users can search for tasks using partial keywords.
+   Here I have limited the search to the main tasks only and not the sub-tasks 
+14)Reminders (Cron): Users can set reminders for important tasks.The reminders is set when we refresh the page, didnot keep it inside render function as I felt it may hamper the user experience.
+15)Implemented the Drag and Drop feature for the main tasks
+16)Implemented the Activity logs which would show activities done for a particular session. i didnot include the Edit DueDate, Edit Priority, Edit Category as I felt these are not the main functionalities and wanted to include only the important ones in the Activity Logs section
+17)Database Schema: Design a suitable database schema to store the todo list data, such as tasks, categories, due dates, priorities, etc. I have added a separate file containing the link of the corresponding google sheet.
+
+

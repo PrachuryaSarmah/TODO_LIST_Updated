@@ -1,0 +1,397 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-color: lightgoldenrodyellow;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: snow;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3498db; 
+   
+  }
+  #actLogs{
+    margin-left: 15px;;
+  }
+
+  #TskName{
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h2 {
+    margin-top: 40px;
+    color: brown; 
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select {
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #sTask{
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: black;
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left:5px;
+    
+  }
+  
+  button:hover {
+    background-color: black;
+    color:white;
+  }
+  
+  .filter-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .filter-section label,
+  .filter-section select {
+    margin-right: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .due-date, .category, .priority {
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  .due-date {
+    color: blue; 
+  }
+  
+  .category {
+    color: #9b59b6; 
+  }
+  
+  .priority {
+    color: #f39c12;
+  }
+  
+  h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 30px;
+  }
+  
+  #backlogsList {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .backlogs-section h2 {
+    color: #ff0000;
+    margin-bottom: 20px;
+  }
+  
+  .backlogs-section li {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  @media (max-width: 400px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    input[type="text"],
+    input[type="date"],
+    select {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .filter-section {
+      flex-direction: column;
+    }
+  
+    .filter-section label,
+    .filter-section select {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .filter-section select {
+      width: 100%;
+    }
+  
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    li button {
+      margin-bottom: 5px;
+    }
+  
+    #backlogsList,
+    #taskList {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .completed-task {
+    text-decoration: line-through;
+  }
+  
+  .overdue-task {
+    color: red; 
+    font-weight: 300;
+  }
+
+  #create{
+    font-style: italic;
+    margin-left: 20px;
+    color: brown
+  }
+
+  .duedate{
+    color: blue;
+    margin-right:25 px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  #addBtn{
+    padding: 8px 16px;
+    height: 40px;
+    width:40px;
+    background-color: azure;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left:5px;
+    min-width: 100px;
+    border: 2px solid black
+  }
+ #addBtn:hover{
+    background-color: black;
+    color:white
+ }
+
+  #searchBtn{
+    padding: 8px;
+    height: 40px;
+    width:40px;
+    background-color: azure;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left:5px;
+    min-width: 100px;
+    border: 2px solid black
+  }
+
+  #searchBtn:hover{
+    background-color: black;
+    color:white
+ }
+
+ #downIt{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .create{
+    background-color: palevioletred;
+    border-radius:50%;
+    padding: 2px;
+    width:60px;
+    height:60px;
+ }
+.create:hover{
+    background-color: brown;
+    color:white;
+}
+ #EdDel{
+    background-color:#9b59b6;
+ }
+ #EdTsk{
+    background-color: #3498db;
+    margin-left: 10px;
+ }
+
+ #EdPri{
+    background-color: blueviolet;
+ }
+#EdDue{
+    background-color: #f39c12;
+}
+
+#EdCat{
+    background-color:aqua;
+}
+
+#AdSub{
+    background-color: burlywood;
+}
+#AdRem{
+
+     background-color: gold;
+}
+
+
+
+ @media (max-width: 1024px) {
+    h1 {
+      font-size: 36px;
+    }
+  
+    .container {
+      padding: 15px;
+    }
+  
+    li {
+      flex-direction: column;
+    }
+  
+    .filter-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .filter-section label,
+    .filter-section select {
+      margin-bottom: 10px;
+    }
+  
+    li button {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    li {
+      flex-direction: column;
+    }
+  
+    .filter-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    li button {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    .container {
+      padding: 5px;
+    }
+  
+    .duedate {
+      margin-right: 0;
+    }
+  
+    .priority {
+      margin-right: 0;
+    }
+  
+    .due-date,
+    .category,
+    .priority {
+      margin-left: 0;
+      margin-bottom: 5px;
+    }
+  
+    li {
+      padding: 5px;
+    }
+  
+    li button {
+      margin-bottom: 5px;
+    }
+  
+    .filter-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .filter-section label,
+    .filter-section select {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .filter-section select {
+      width: 100%;
+    }
+  
+    #addBtn,
+    #searchBtn {
+      height: 30px;
+      width: 30px;
+      font-size: 16px;
+    }
+  }

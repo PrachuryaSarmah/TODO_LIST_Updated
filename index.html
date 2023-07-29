@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TODO LIST</h1>
+    <input type="text" id="taskInput" placeholder="Enter task...">
+    <input type="date" id="dueDateInput">
+    <select id="categoryInput">
+      <option value="none" selected disabled hidden>Select Category</option>
+      <option value="Home">Home</option>
+      <option value="Office">Office</option>
+      <option value="Health">Health</option>
+      <option value="Fun">Fun</option>
+    </select>
+    <select id="priorityInput">
+      <option value="none" selected disabled hidden>Select Priority</option>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+    <button id="addBtn">Add</button>
+    <div class="filter-section">
+        <label class="duedate" for="filterPriority">Filter by Priority:</label>
+        <select id="filterPriority">
+          <option value="all">All</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <label class="duedate" for="filterDueDate">Filter by Due Date:</label>
+        <input type="date" id="filterDueDate">
+        <label class="duedate"  for="filterCategory">Filter by Category:</label>
+        <select id="filterCategory">
+          <option value="all">All</option>
+          <option value="Home">Home</option>
+          <option value="Office">Office</option>
+          <option value="Health">Health</option>
+          <option value="Fun">Fun</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchBtn" onclick="searchTasks()">Search</button>
+      </div>
+      <h2>Backlogs</h2>
+      <ul id="backlogsList"></ul>
+      <h2>To-Do Items</h2>
+      <ul id="taskList"></ul>
+    </div>
+    
+    <h2 id="actLogs">Activity Logs</h2>
+    <ul id="activityLog"></ul>
+    
+  <script src="script.js"></script>
+</body>
+</html>
